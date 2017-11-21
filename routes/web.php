@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/formulario', function(){
+    return view('formulario');
+});
+
+Route::post('/formulario', 'FormController@formRedirect')->name('formulariosubmit');
